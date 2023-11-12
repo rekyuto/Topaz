@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>r_kt | Topaz!!</title>
+            <title>Topaz's Taxing Trek!</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
@@ -19,17 +19,22 @@
         <script src="static/js/script.js"></script>
             <center>
                 <div class="header">
-                    <h1>Topaz</h1>
-                    <h3>subheader about topaz idk yet</h3>
+                    <h1>Topaz's Taxing Trek!</h1>
+                    <h3>Help Topaz from Honkai: Star Rail collect taxes owed to the IPC!</h3>
                 </div>
                 <div class="score-counter">
-                    <h4>Total # of something:</h4>
-                    <h2><span id="score">0</span></h2>
+                    <h4>Total # of credits taxed:</h4>
+                    <div class="actual-score">
+                        <img id="credit" src="static/images/credit.webp">
+                    </div>
+                    <div class="actual-score">
+                        <h2><span id="score">0</span></h2>
+                    </div>
                 </div>
                 <div class="topaz">
                     <img id="topaz" src="static/images/topaz_stickers/topaz3.webp">
                 </div>
-                <button id="clicker" onclick="scoreCounter()">click</button>
+                <button id="clicker" onclick="scoreCounter()">Tax!</button>
                 <h6>Inspired by <a href="https://duiqt.github.io/herta_kuru/" target="_blank">Herta Kuru</a> and <a href="tannhauser.moe" target="_blank">tannhauser.moe</a> | <a href="https://github.com/rekyuto/Topaz" target="_blank" >GitHub</a></h6>
             </center>
         </body>
