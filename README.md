@@ -1,5 +1,5 @@
 # Topaz's Taxing Trek!
-<img src="static/images/topaz_stickers/topaz1.webp"><img src="static/images/topaz_stickers/topaz4.webp"><img src="static/images/topaz_stickers/topaz2.webp">
+<img src="static/images/topaz_stickers/topaz1.webp"><img src="static/images/topaz_stickers/topaz2.webp">
 
 ## Credits
 ### Artwork
