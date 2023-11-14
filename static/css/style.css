@@ -11,9 +11,9 @@ h3 {
     position: relative;
     bottom: 25px;
 }
-h6 {
+h5 {
     position: relative;
-    top: 100px;
+    bottom: 18px;
 }
 a {
     color: #daac22;
@@ -27,6 +27,11 @@ a {
     vertical-align: middle;
     position: relative;
     bottom: 40px;
+    margin-right: 3px;
+}
+.links {
+    position: relative;
+    top: 100px;
 }
 #topaz {
     width: 175px;
