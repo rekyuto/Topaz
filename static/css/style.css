@@ -30,10 +30,10 @@ a {
 .game-area {
     margin-top: 25px;
 }
-.score-counter {
+.credit-counter {
     margin-bottom: 25px;
 }
-.actual-score {
+.actual-credits {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 40px;
@@ -45,7 +45,7 @@ a {
 }
 #topaz {
     height: 175px;
-    bottom: 60px;
+    bottom: 55px;
     position: relative;
     animation-name: topaz-move;
     animation-duration: 2.5s;
@@ -56,9 +56,9 @@ a {
     align-self: center;
 }
 @keyframes topaz-move {
-    0% {bottom: 70px;}
-    50% {bottom: 60px;}
-    100% {bottom: 70px;}
+    0% {bottom: 65px;}
+    50% {bottom: 55px;}
+    100% {bottom: 65px;}
 }
 #clicker {
     font-family: 'DM Sans', sans-serif;

@@ -1,12 +1,16 @@
-let score = 0;
+// counter
 
-function scoreCounter() {
-    score = score + 1;
-	let scoreboard = document.getElementById('score');
-	scoreboard.innerHTML = score;
+let credits = 0;
+
+function creditCounter() {
+    credits++;
+	let scoreboard = document.getElementById('credits');
+	scoreboard.innerHTML = credits;
 	playSound();
 	animateTopaz();
 }
+
+// audio
 
 var topazAudio = [
 	new Audio("static/audio/topaz1.wav"),
@@ -22,11 +26,13 @@ function playSound() {
 	audio = topazAudio[random].cloneNode();
 	audio.play();
 }
+
+// topaz animations
+
 function animateTopaz () {
 	var clicker = document.getElementById("clicker");
     var id = null;
-
-	var random = Math.floor(Math.random() * 2) + 1;
+	var random = Math.floor(Math.random() * 3) + 1;
     var elem = document.createElement("img");
     elem.src = `static/images/topaz_stickers/topaz${random}.webp`;
     elem.style.position = "absolute";
@@ -34,17 +40,16 @@ function animateTopaz () {
     elem.style.top = clicker.getClientRects()[0].bottom + scrollY - 305 + "px"
     elem.style.zIndex = "-1";
     document.body.appendChild(elem);
-
     var pos = -305;
     var limit = window.innerWidth + 305;
     clearInterval(id);
-    id = setInterval(frame, 10);
+    id = setInterval(frame, Math.floor(Math.random() * 20));
     function frame() {
     	if (pos >= limit) {
     	clearInterval(id);
     	elem.remove()
 		} else {
-    	pos += 15;
+    	pos += 10;
     	elem.style.right = pos + 'px'; 
     	}
 	}
