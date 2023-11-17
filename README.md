@@ -10,4 +10,4 @@
 Topaz (and Numby) Stickers by HoYoverse themselves
 ### Inspirations
 - duiqt's [Herta Kuru](https://duiqt.github.io/herta_kuru/)
-- KawaiiShadowii's [tannhauser.moe](https://tannhauser.moe)
+- KawaiiShadowii's [tannhauser.moe](https://tannhauser.moe) (and animation code)
