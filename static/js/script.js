@@ -1,5 +1,4 @@
 // counter
-
 let credits = 0;
 
 function creditCounter() {
@@ -43,7 +42,7 @@ function animateTopaz () {
     var pos = -305;
     var limit = window.innerWidth + 305;
     clearInterval(id);
-    id = setInterval(frame, Math.floor(Math.random() * 20));
+    id = setInterval(frame, Math.floor(Math.random() * 15));
     function frame() {
     	if (pos >= limit) {
     	clearInterval(id);
