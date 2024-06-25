@@ -5,7 +5,7 @@
     padding: 0;
     touch-action: manipulation;
 }
-body {
+html {
     background-color: #e9ebfa;
     font-family: 'DM Sans', sans-serif;
 }
@@ -41,7 +41,7 @@ a {
 }
 .links {
     position: relative;
-    top: 100px;
+    top: 10px;
 }
 #topaz {
     height: 175px;
@@ -54,6 +54,15 @@ a {
 #title-topaz {
     height: 50px;
     align-self: center;
+}
+#rekuto-topaz {
+    width: 700px;
+    max-width: 90%;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+}
+#rekuto-topaz:hover {
+    box-shadow: 1px 1px 5px black;
 }
 @keyframes topaz-move {
     0% {bottom: 65px;}
