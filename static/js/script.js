@@ -1,10 +1,10 @@
 // counter
-let credits = 0;
+let localCount = localStorage.getItem('count') || 0;
 
 function creditCounter() {
-    credits++;
-	let count = document.getElementById('credits');
-	count.innerHTML = credits;
+	localCount++;
+	localStorage.setItem('count', localCount);
+	document.getElementById("credits").innerHTML = localCount + "x";
 	playSound();
 	animateTopaz();
 }
