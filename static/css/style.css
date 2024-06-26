@@ -32,6 +32,7 @@ a {
 }
 .credit-counter {
     margin-bottom: 25px;
+    text-shadow: 0 0 5px #e9ebfa;
 }
 .actual-credits {
     display: inline-block;
@@ -43,19 +44,49 @@ a {
     position: relative;
     top: 10px;
 }
+.main {
+    animation: fadeIn 1s ease;
+}
+.build {
+    opacity: 0;
+    position: relative;
+    animation: buildFadeIn 1s 0.5s ease forwards;
+}
+.sites {
+    opacity: 0;
+    animation: fadeIn 1s 1s ease forwards;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@keyframes buildFadeIn {
+    0% {
+        opacity: 0;
+        top: 30px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
 #topaz {
     height: 175px;
     bottom: 55px;
     position: relative;
-    animation-name: topaz-move;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
+    animation: topazMove 2.5s infinite;
+}
+@keyframes topazMove {
+    0% {bottom: 65px;}
+    50% {bottom: 55px;}
+    100% {bottom: 65px;}
 }
 #title-topaz {
     height: 50px;
     align-self: center;
 }
 #rekuto-topaz {
+    position: relative;
     width: 700px;
     max-width: 90%;
     border-radius: 15px;
@@ -63,11 +94,6 @@ a {
 }
 #rekuto-topaz:hover {
     box-shadow: 1px 1px 5px black;
-}
-@keyframes topaz-move {
-    0% {bottom: 65px;}
-    50% {bottom: 55px;}
-    100% {bottom: 65px;}
 }
 #clicker {
     font-family: 'DM Sans', sans-serif;

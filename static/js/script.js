@@ -3,8 +3,8 @@ let credits = 0;
 
 function creditCounter() {
     credits++;
-	let scoreboard = document.getElementById('credits');
-	scoreboard.innerHTML = credits;
+	let count = document.getElementById('credits');
+	count.innerHTML = credits;
 	playSound();
 	animateTopaz();
 }
