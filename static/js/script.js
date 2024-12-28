@@ -31,7 +31,7 @@ function playSound() {
 function animateTopaz () {
 	var clicker = document.getElementById("clicker");
     var id = null;
-	var random = Math.floor(Math.random() * 3) + 1;
+	var random = Math.floor(Math.random() * 4) + 1;
     var elem = document.createElement("img");
     elem.src = `static/images/topaz_stickers/topaz${random}.webp`;
     elem.style.position = "absolute";

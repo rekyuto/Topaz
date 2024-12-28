@@ -45,7 +45,7 @@ a {
     top: 10px;
 }
 .main {
-    animation: fadeIn 1s ease;
+    animation: fadeIn 0.5s ease;
 }
 .build {
     opacity: 0;
